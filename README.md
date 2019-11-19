@@ -1,2 +1,2 @@
-# myNotes
-Call me daddy
+# Initial page
+
