@@ -1,4 +1,4 @@
-# Declare \(声明\) vs. Define \(定义\) \(CN\)
+# Declare \(声明\) vs. Define \(定义\)
 
 ## Defining/Declaring Variable
 
