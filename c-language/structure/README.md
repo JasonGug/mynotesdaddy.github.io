@@ -166,3 +166,22 @@ void main()
 }
 ```
 
+### Nested Structure
+
+Nesting of structures, is also permitted in C language. Nested structures means, that one structure has another structure as member variable.
+
+```c
+struct Student
+{
+    char[30] name;
+    int age;
+    /* here Address is a structure */
+    struct Address
+    {
+        char[50] locality;
+        char[50] city;
+        int pincode;		
+    }addr;
+};
+```
+

@@ -22,11 +22,14 @@
   * [Two-dimensional Array](c-language/data-structure-in-c/two-dimensional-array.md)
 * [Enumeration \(enum\)](c-language/enumeration-enum.md)
 * [Pointer \(指针\)](c-language/pointer-zhi-zhen/README.md)
+  * [Address in C & Basic concept of Pointer](c-language/pointer-zhi-zhen/address-in-c-and-basic-concept-of-pointer.md)
   * [Function Pointer](c-language/pointer-zhi-zhen/function-pointer.md)
+  * [Declaring, Initializing and using a pointer variable in C](c-language/pointer-zhi-zhen/declaring-initializing-and-using-a-pointer-variable-in-c.md)
 * [String](c-language/string/README.md)
   * [C Built-in String Function](c-language/string/c-built-in-string-function.md)
 * [Structure](c-language/structure/README.md)
   * [Typedef in C](c-language/structure/typedef-in-c.md)
+  * [Union](c-language/structure/union.md)
 
 ## Vue .js
 

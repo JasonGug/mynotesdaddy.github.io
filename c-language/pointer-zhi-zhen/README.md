@@ -35,6 +35,8 @@ char   *ch;     /* 一个字符型的指针 */
 
 ### How to use pointer
 
+To get more information click [here](declaring-initializing-and-using-a-pointer-variable-in-c.md)
+
 ```c
 #include <stdio.h>
  
