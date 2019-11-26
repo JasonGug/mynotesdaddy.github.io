@@ -25,6 +25,7 @@
   * [Address in C & Basic concept of Pointer](c-language/pointer-zhi-zhen/address-in-c-and-basic-concept-of-pointer.md)
   * [Function Pointer](c-language/pointer-zhi-zhen/function-pointer.md)
   * [Declaring, Initializing and using a pointer variable in C](c-language/pointer-zhi-zhen/declaring-initializing-and-using-a-pointer-variable-in-c.md)
+  * [Pointer to Pointer \(Double Pointer\)](c-language/pointer-zhi-zhen/pointer-to-pointer-double-pointer.md)
 * [String](c-language/string/README.md)
   * [C Built-in String Function](c-language/string/c-built-in-string-function.md)
 * [Structure](c-language/structure/README.md)

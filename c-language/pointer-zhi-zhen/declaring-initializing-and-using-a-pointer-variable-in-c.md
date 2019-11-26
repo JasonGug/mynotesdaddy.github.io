@@ -78,3 +78,10 @@ int main()
 }
 ```
 
+### Points to remember while using pointers
+
+* While declaring/initializing the pointer variable, `*` indicates that the variable is a pointer.
+* The address of any variable is given by preceding the variable name with Ampersand `&` 
+* The pointer variable stores the address of a variable. The declaration `int *a` doesn't mean that `a` is going to contain an integer value. It means that `a` is going to contain the address of a variable storing integer value.
+* To access the value of a certain address stored by a pointer variable, `*` is used. Here, the `*` can be read as **'value at'**.
+
