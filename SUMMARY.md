@@ -26,11 +26,19 @@
   * [Function Pointer](c-language/pointer-zhi-zhen/function-pointer.md)
   * [Declaring, Initializing and using a pointer variable in C](c-language/pointer-zhi-zhen/declaring-initializing-and-using-a-pointer-variable-in-c.md)
   * [Pointer to Pointer \(Double Pointer\)](c-language/pointer-zhi-zhen/pointer-to-pointer-double-pointer.md)
+  * [Pointer and Arrays in C](c-language/pointer-zhi-zhen/pointer-and-arrays-in-c/README.md)
+    * [Pointer to Array](c-language/pointer-zhi-zhen/pointer-and-arrays-in-c/pointer-to-array.md)
+    * [Pointer of Multidimensional Array](c-language/pointer-zhi-zhen/pointer-and-arrays-in-c/pointer-of-multidimensional-array.md)
+  * [Pointer and Character strings](c-language/pointer-zhi-zhen/pointer-and-character-strings.md)
+  * [Pointer To Structure](c-language/pointer-zhi-zhen/pointer-to-structure.md)
+  * [Pointer Arithmetic](c-language/pointer-zhi-zhen/pointer-arithmetic.md)
 * [String](c-language/string/README.md)
   * [C Built-in String Function](c-language/string/c-built-in-string-function.md)
+  * [String Pointer](c-language/string/string-pointer.md)
 * [Structure](c-language/structure/README.md)
   * [Typedef in C](c-language/structure/typedef-in-c.md)
   * [Union](c-language/structure/union.md)
+  * [Pointer To Structure](c-language/structure/pointer-to-structure.md)
 
 ## Vue .js
 

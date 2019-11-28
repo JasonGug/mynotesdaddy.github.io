@@ -16,7 +16,7 @@ A callback function is a function passed into another function as an argument, w
 回调函数是一个作为参数传给另一个 JavaScript 函数的函数。这个回调函数会在传给的函数内部执行。  
 在 JavaScript 中函数被看作是一类对象（Object）。对于一类对象，我们的意思是指数字、函数或变量可以与语言中的其他实体相同。作为一类对象，可以将函数作为变量传给其他函数，也可以从其他函数中返回这些函数。
 
-![Architecture of callback function](../../.gitbook/assets/image%20%281%29.png)
+![Architecture of callback function](../../.gitbook/assets/image%20%282%29.png)
 
 ### C Example
 

@@ -7,7 +7,7 @@
   
 
 
-![Difference between Structure &amp; Union](../../.gitbook/assets/image%20%282%29.png)
+![Difference between Structure &amp; Union](../../.gitbook/assets/image.png)
 
 ### Accessing a Union Member in C
 

@@ -61,3 +61,9 @@ Value of **p2 = 10
 */
 ```
 
+
+
+* `p1` pointer variable can only hold the address of the variable `a` \(i.e Number of indirection operator\(\*\)-1 variable\). Similarly, `p2` variable can only hold the address of variable `p1`. It cannot hold the address of variable `a`.
+* `*p2` gives us the value at an address stored by the `p2` pointer. `p2` stores the address of `p1` pointer and value at the address of `p1` is the address of variable `a`. Thus, `*p2` prints address of `a`.
+* `**p2` can be read as `*(*p2)`. Hence, it gives us the value stored at the address `*p2`. From above statement, you know `*p2` means the address of variable a. Hence, the value at the address `*p2` is 10. Thus, `**p2` prints `10`.
+

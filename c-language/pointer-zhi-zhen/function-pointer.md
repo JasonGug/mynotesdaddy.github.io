@@ -2,29 +2,148 @@
 
 ### How to define a function pointer
 
+Pointer as a function parameter is used to hold addresses of arguments passed during function call. This is also known as **call by reference**. When a function is called by reference any change made to the reference variable will effect the original variable.
+
+### Example Time: Swapping two numbers using Pointer
+
 ```c
 #include <stdio.h>
- 
-int max(int x, int y) //Define a function
+
+void swap(int *a, int *b);
+
+int main()
 {
-    return x > y ? x : y;
-}
- 
-int main(void)
-{
-    int (* p)(int, int) = & max; // Define the funtion pointer. 
-    //& symbol can be removed
-    int a, b, c, d;
- 
-    printf("请输入三个数字:");
-    scanf("%d %d %d", & a, & b, & c);
- 
-    /* 与直接调用函数等价，d = max(max(a, b), c) */
-    d = p(p(a, b), c); 
- 
-    printf("最大的数字是: %d\n", d);
- 
+    int m = 10, n = 20;
+    printf("m = %d\n", m);
+    printf("n = %d\n\n", n);
+
+    swap(&m, &n);    //passing address of m and n to the swap function
+    printf("After Swapping:\n\n");
+    printf("m = %d\n", m);
+    printf("n = %d", n);
     return 0;
 }
+
+/*
+    pointer 'a' and 'b' holds and 
+    points to the address of 'm' and 'n'
+*/
+void swap(int *a, int *b) 
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+/* OUTPUT:
+m = 10
+n = 20
+After Swapping:
+m = 20
+n = 10
+*/
 ```
+
+### Functions returning Pointer variables
+
+A function can also `return` a pointer to the calling function. In this case you must be careful, because local variables of function doesn't live outside the function. They have scope only inside the function. Hence if you return a pointer connected to a local variable, that pointer will be pointing to nothing when the function ends.
+
+```c
+#include <stdio.h>
+
+int* larger(int*, int*);
+
+void main()
+{
+    int a = 15;
+    int b = 92;
+    int *p;
+    p = larger(&a, &b);
+    printf("%d is larger",*p);
+}
+
+int* larger(int *x, int *y)
+{
+    if(*x > *y)
+        return x;
+    else
+        return y;
+}
+/* OUTPUT:
+92 is larger
+*/
+```
+
+#### Safe ways to return a valid Pointer.
+
+1. Either use **argument with functions**. Because argument passed to the functions are declared inside the calling function, hence they will live outside the function as well.
+2. 3. Or, use `static` **local variables** inside the function and return them. As static variables have a lifetime until the `main()` function exits, therefore they will be available throughout the program.
+
+### Pointer to functions
+
+It is possible to declare a pointer pointing to a function which can then be used as an argument in another function. A pointer to a function is declared as follows,
+
+```c
+type (*pointer-name)(parameter);
+```
+
+Here is an example :
+
+```c
+int (*sum)();   //legal declaration of pointer to function
+int *sum();     //This is not a declaration of pointer to function
+```
+
+A function pointer can point to a specific function when it is assigned the name of that function.
+
+```c
+int sum(int, int);
+int (*s)(int, int);
+s = sum;
+```
+
+Here `s` is a pointer to a function `sum`. Now `sum` can be called using function pointer `s` along with providing the required argument values.
+
+```c
+s (10, 20);
+```
+
+### Example of Pointer to Function
+
+```c
+#include <stdio.h>
+
+int sum(int x, int y)
+{
+    return x+y;
+}
+
+int main( )
+{
+    int (*fp)(int, int);
+    fp = sum;
+    int s = fp(10, 15);
+    printf("Sum is %d", s);
+
+    return 0;
+}
+/* OUTPUT:
+25
+*/
+
+```
+
+ 
+
+### Complicated Function Pointer example
+
+You will find a lot of complex function pointer examples around, lets see one such example and try to understand it.
+
+```text
+void *(*foo) (int*);
+```
+
+It appears complex but it is very simple. In this case `(*foo)` is a pointer to the function, whose argument is of `int*` type and return type is `void*`.  
+
 
