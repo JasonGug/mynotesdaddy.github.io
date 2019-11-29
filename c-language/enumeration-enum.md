@@ -23,20 +23,14 @@ enum DAY
 };
 ```
 
-{% hint style="info" %}
-第一个枚举成员的默认值为整型的 0，后续枚举成员的值在前一个成员上加 1。我们在这个实例中把第一个枚举成员的值定义为 1，第二个就为 2，以此类推。
-
-First member of enum has a default value 0 and so on. However, if we set the first enum member to value 1, the second member will be 2 instead of 1 and so on.
-{% endhint %}
+一个枚举成员的默认值为整型的 0，后续枚举成员的值在前一个成员上加 1。我们在这个实例中把第一个枚举成员的值定义为 1，第二个就为 2，以此类推。 First member of enum has a default value 0 and so on. However, if we set the first enum member to value 1, the second member will be 2 instead of 1 and so
 
 ```c
 enum season {spring, summer=3, autumn, winter};
 
 ```
 
-{% hint style="info" %}
 In this case, spring is 0, summer is 3, autumn is 4, winter is 5.
-{% endhint %}
 
 ### Define a Enum
 
