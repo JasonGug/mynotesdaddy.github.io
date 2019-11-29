@@ -66,9 +66,7 @@ int main()
 }
 ```
 
-{% hint style="warning" %}
-This is an important topic that will be tested in all Uni Exam.
-{% endhint %}
+
 
 
 
